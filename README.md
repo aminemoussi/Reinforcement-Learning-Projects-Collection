@@ -39,7 +39,8 @@ RL-Projects/
 
 # 📁 Projects Overview
 ## 1. 🤖 Q-Learning: Grid World Navigation
-Screenshot: media/qgame_2.png
+
+This implementation demonstrates classic Q-Learning in a 4x4 grid environment with obstacles. The agent starts at (0,0) and learns to navigate to the goal at (3,3) while avoiding obstacles.
 
 Key Features:
 - Tabular Q-learning implementation
@@ -48,14 +49,11 @@ Key Features:
 - Custom grid environment with obstacles
 
 Results:
-Best Actions Grid:
--------------------------------------------
-| >:  94.06   | >:  96.02   | v:  98.00   | 
--------------------------------------------
-| v:  96.02   |  OBSTACLE   | v: 100.00   | 
--------------------------------------------
-| >:  98.00   | >: 100.00   |    GOAL     | 
--------------------------------------------
+ - Learned Policy: ![](Q-learning/media/policy.png)
+ - Training Progress: ![](Classic_CNN/media/training_progress.png)
+ - Training Progress: ![](Classic_CNN/media/training_progress.png)
+
+---------
 
 ## 2. 🧠 Deep Q-Network: CartPole Balancing
 Screenshot: media/DQN_policy_viz.png
