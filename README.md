@@ -1,18 +1,16 @@
 # Reinforcement Learning Projects Collection (will be uploaded soon, almost finished)
 
-A collection of reinforcement learning implementations showcasing fundamental to advanced algorithms. Perfect for understanding RL concepts and their practical applications in autonomous systems and decision-making.
+A collection of reinforcement learning implementations showcasing fundamental to advanced algorithms.
 
 📋 Repository Structure
-
 ```
 RL-Projects/
 ├── 1-Q-Learning-GridWorld/
-│   ├── qlearning_gridworld.ipynb
+│   ├── ql_earning.ipynb
 │   ├── media/
-│   │   ├── qgame_1.png
-│   │   ├── qgame_2.png
-│   │   └── qtable.png
-│   └── README.md
+│       ├── Q_Table_Visualization.png
+│       ├── agent_test.png
+│       └── policy.png
 ├── 2-DeepQ-Network-CartPole/
 │   ├── dqn_cartpole.ipynb
 │   ├── cartpole_model/
@@ -45,13 +43,13 @@ This implementation demonstrates classic Q-Learning in a 4x4 grid environment wi
 Key Features:
 - Tabular Q-learning implementation
 - Dynamic exploration-exploitation balance (ε-greedy)
-- Optimal policy visualization
+- Policy visualization
 - Custom grid environment with obstacles
 
 Results:
  - Learned Policy: ![](Q-learning/media/policy.png)
  - Test Results: ![](Q-learning/media/agent_test.png)
- - Q-Table Visualization: ![](Q-learning/media/Q-Table Visualization.png)
+ - Q-Table Visualization: ![](Q-learning/media/Q_Table_Visualization.png)
 
 ---------
 
@@ -69,6 +67,10 @@ Input (4) → Dense(24) → Dense(24) → Output(2)
 Total Parameters: 770
 
 Performance: Achieved perfect score of 500/500 consistently
+
+
+--------
+
 
 ## 3. 🎮 Proximal Policy Optimization: Atari Pong
 Screenshot: media/action_prob_ppo.png
