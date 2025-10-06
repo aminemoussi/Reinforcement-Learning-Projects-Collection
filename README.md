@@ -50,8 +50,8 @@ Key Features:
 
 Results:
  - Learned Policy: ![](Q-learning/media/policy.png)
- - Training Progress: ![](Classic_CNN/media/training_progress.png)
- - Training Progress: ![](Classic_CNN/media/training_progress.png)
+ - Test Results: ![](Q-learning/media/agent_test.png)
+ - Q-Table Visualization: ![](Q-learning/media/Q-Table Visualization.png)
 
 ---------
 
