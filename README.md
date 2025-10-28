@@ -1,4 +1,4 @@
-# Reinforcement Learning Projects Collection (will be uploaded soon, almost finished)
+# Reinforcement Learning Projects Collection 
 
 A collection of reinforcement learning implementations showcasing fundamental to advanced algorithms.
 
