@@ -65,13 +65,13 @@ A PyTorch implementation of Deep Q-Network (DQN) with experience replay and targ
 
 ### 📈 Training Results
 
-https://cartpole_model/training_results.png
+![](Deep_Q_Network/media/training.png)
 
 The agent typically solves CartPole-v1 (195+ average score) in 200-300 episodes using this configuration.
 
 
 ### 🎮 Demo
-https://demo/demo.gif
+![](Deep_Q_Network/media/demo.gif)
 
 ### 🚀 Quick Start
 - Installation
