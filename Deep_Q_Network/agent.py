@@ -67,11 +67,15 @@ class Agent:
         mini_batch = random.sample(self.memory, batch_size)
 
         # extracting states + actions + rewards + next states + done
-        states = torch.FloatTensor([e[0] for e in mini_batch]).to(self.device)
-        actions = torch.LongTensor([e[1] for e in mini_batch]).to(self.device)
-        rewards = torch.FloatTensor([e[2] for e in mini_batch]).to(self.device)
-        next_states = torch.FloatTensor([e[3] for e in mini_batch]).to(self.device)
-        dones = torch.BoolTensor([e[4] for e in mini_batch]).to(self.device)
+        states = torch.FloatTensor(np.array([e[0] for e in mini_batch])).to(self.device)
+        actions = torch.LongTensor(np.array([e[1] for e in mini_batch])).to(self.device)
+        rewards = torch.FloatTensor(np.array([e[2] for e in mini_batch])).to(
+            self.device
+        )
+        next_states = torch.FloatTensor(np.array([e[3] for e in mini_batch])).to(
+            self.device
+        )
+        dones = torch.BoolTensor(np.array([e[4] for e in mini_batch])).to(self.device)
 
         # get current q vals
         current_q_values = self.model(states).gather(1, actions.unsqueeze(1))

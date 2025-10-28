@@ -4,7 +4,7 @@ import torch.nn.functional as F
 
 
 class DDQN(nn.Module):
-    def __init__(self, action_size=2, state_size=4, **kwargs):
+    def __init__(self, state_size, action_size, **kwargs):
         super(DDQN, self).__init__(**kwargs)
         self.action_size = action_size
         self.state_size = state_size
