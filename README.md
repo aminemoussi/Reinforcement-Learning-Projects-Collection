@@ -53,21 +53,57 @@ Results:
 
 ---------
 
-## 2. 🧠 Deep Q-Network: CartPole Balancing
-Screenshot: media/DQN_policy_viz.png
+## 2. 🧠 Double Deep Q-Network: CartPole Balancing
 
-Key Features:
-- Neural network Q-value approximation
-- Experience replay buffer
-- Target network stabilization
-- Double DQN implementation
+A PyTorch implementation of Deep Q-Network (DQN) with experience replay and target network stabilization to solve the CartPole-v1 environment from Gymnasium.
 
-Architecture:
-Input (4) → Dense(24) → Dense(24) → Output(2)
-Total Parameters: 770
+### 🎯 Features
+ - Double DQN - Reduces overestimation bias
+ - Experience Replay - Learns from past experiences
+ - Target Network - Stabilizes training
+ - Epsilon-Greedy - Balanced exploration vs exploitation
 
-Performance: Achieved perfect score of 500/500 consistently
+### 📈 Training Results
 
+https://cartpole_model/training_results.png
+
+The agent typically solves CartPole-v1 (195+ average score) in 200-300 episodes using this configuration.
+
+
+### 🎮 Demo
+https://demo/demo.gif
+
+### 🚀 Quick Start
+- Installation
+```
+pip install gymnasium torch matplotlib
+```
+
+- Training
+```
+python train.py
+```
+
+- Testing
+```
+python test.py
+```
+
+### 🏗️ Architecture
+ - Network: 3-layer MLP (24 → 24 neurons)
+ - Algorithm: Double DQN with experience replay
+ - Optimizer: Adam (lr=0.001)
+ - State Space: 4 dimensions
+ - Action Space: 2 actions (left/right)
+
+### 📁 Project Structure
+```
+├── agent.py          # DQN agent implementation
+├── ddqn.py           # Neural network architecture  
+├── train.py          # Training script
+├── test.py           # Testing/evaluation script
+└── cartpole_model/   # Saved models & training plots
+```
 
 --------
 
