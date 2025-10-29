@@ -71,7 +71,13 @@ The agent typically solves CartPole-v1 (195+ average score) in 200-300 episodes 
 
 
 ### 🎮 Demo
-![](Deep_Q_Network/media/demo.gif)
+
+<p align="center">
+  <img src="Deep_Q_Network/media/demo.gif" alt="Demo">
+  <br>
+  <em>Best model testing when running <strong>evaluate.py</strong></em>
+</p>
+
 
 ### 🚀 Quick Start
 - Installation
